@@ -7,7 +7,7 @@
     <script src="Validator.js"></script>
 </head>
 <body>
-    <form id="form" method="post">
+    <form id="form" method="get">
         <div>
             <h1 class="firstHeader">FLOWER SHOP ONLINE</h1>
         </div>
@@ -58,7 +58,7 @@
             </tr>
             <tr>
                 <td><label>* <u>Security Code</u></label></td>
-                <td><input type="text" id="txtCode" size="10" onblur="ValidateSecurityCode()" required="required" /> </td>
+                <td><input type="password" id="txtCode" size="10" onblur="ValidateSecurityCode()" required="required" /> </td>
             </tr>
             <tr>
                 <td><label>* Expiry date</label></td>
@@ -158,10 +158,10 @@
             <img id="firstLogo" src="images/restart.png" />
         </div>
         <div id="txtRestart">
-            <button class="btnStart">START AGAIN</button>
+            <button type="reset" id="btnStart">START AGAIN</button>
         </div>
         <div id="txtPayment">
-            <button class="btnStart">MAKE PAYMENT</button>
+            <button type="submit" id="btnStart" value="submit" onblur="SubmitOperation()">MAKE PAYMENT</button>
         </div>
         <div id="secondLogo">
             <img src="images/secondlogo.png" />
@@ -170,7 +170,7 @@
             <img id="cancelLogo" src="images/cancel.png" />
         </div>
         <div id="txtCancel">
-            <button class="btnStart">CANCEL</button>
+            <button  id="btnStart" onblur="CancelOperation()">CANCEL</button>
         </div>
         <div id="lineColor">
         </div>

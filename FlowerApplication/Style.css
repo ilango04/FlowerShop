@@ -48,6 +48,7 @@
 {
     margin-left:10px;
     width:130px;
+    border-color:aqua;
 }
 #firstFont, #secondFont, #thirdFont {
     margin-left: 565px;
@@ -104,16 +105,23 @@
 
 #txtCard,#txtCode,#txtName,#txtRegion,#txtPincode,#txtPhone,#txtFax,#txtEmail
 {
+    border-color:aqua;
     width:250px;
 }
 .monthSelect
 {
     width:60px;
+    border-color:aqua;
 }
 .yearSelect
 {
     width:60px;
     margin-left:-180px;
+    border-color:aqua;
+}
+.countrySelect
+{
+    border-color:aqua;
 }
 #txtRestart {
     margin-left: 600px;
@@ -148,10 +156,15 @@
     background-color:yellowgreen;
     height:60px;
 }
-.btnStart {
+#btnStart {
     border: none;
     background-color: none;
     cursor: pointer;
     display: inline-block;
     font-family: Arial;
+    color:indigo;
+}
+#txtAddress
+{
+    border-color:aqua;
 }
